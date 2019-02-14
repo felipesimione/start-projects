@@ -5,7 +5,7 @@ library(arules)
 library(arulesViz)
 
 # leitura das transacoes com headers "t"(pedido) e "p"(produto)
-products = read.transactions("C:/Users/felipe.simione/Desktop/Lambda3/DESAFIO8/online_retail_uk.csv"
+products = read.transactions("online_retail_uk.csv"
                              , format = "single", sep = ";", cols = c("InvoiceNo", "Description"))
 
 # algoritmo apriori com confiança mínima=0.1 e suporte mínimo=0.0001
